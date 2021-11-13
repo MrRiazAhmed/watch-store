@@ -12,7 +12,7 @@ const Details = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allproducts')
+        fetch('https://young-brook-97502.herokuapp.com/allproducts')
             .then(res => res.json())
             .then(data => setAllProducts(data))
 
@@ -31,7 +31,7 @@ const Details = () => {
         data.email = user.email;
 
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://young-brook-97502.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

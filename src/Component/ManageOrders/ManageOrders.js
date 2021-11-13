@@ -8,7 +8,7 @@ const ManageOrders = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://young-brook-97502.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -18,7 +18,7 @@ const ManageOrders = () => {
         const confirmation = window.confirm('Are you sure,want to delete?');
         if (confirmation) {
             console.log(id);
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://young-brook-97502.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
