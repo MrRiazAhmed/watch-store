@@ -1,0 +1,10 @@
+.body{
+    background-color: rgb(252, 252, 252);
+}
+.card {
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  .card:hover {
+    box-shadow: 4px 10px 10px rgb(20, 21, 19);
+  }

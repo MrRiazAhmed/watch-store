@@ -1,0 +1,9 @@
+.error{
+    background-image: url(https://images4.alphacoders.com/111/thumb-1920-1112635.png);
+    height: 500px;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
